@@ -1,0 +1,46 @@
+# LangChain RAG 系统依赖
+# 核心依赖
+langchain==0.1.0
+langchain-community==0.0.10
+langchain-core==0.1.0
+
+# 向量数据库
+chromadb==0.4.22
+
+# LLM API接口
+openai==1.6.1
+
+# Web服务框架
+fastapi==0.109.0
+uvicorn==0.27.0
+
+# 工具库
+python-dotenv==1.0.0
+requests==2.31.0
+numpy==1.24.3
+
+# 文档处理（可选，支持更多格式）
+pypdf==3.17.0
+python-docx==1.1.0
+
+# 本地嵌入模型（可选，EMBED_MODE=local 时需要）
+# sentence-transformers==2.2.2
+# torch>=1.13.0
+
+# 进度条和日志
+tqdm==4.66.1
+colorlog==6.7.0
+
+# 性能优化
+httpx==0.25.2
+
+# 钉钉集成（可选）
+# dingtalk-stream==0.2.0  # 如果需要钉钉机器人功能
+
+# 开发工具（可选）
+# pytest==7.4.3
+# black==23.11.0
+# flake8==6.1.0
+
+# 注意：根据实际需求选择安装
+# pip install -r requirements.txt
