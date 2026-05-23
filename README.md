@@ -16,6 +16,11 @@
 - **性能优化**：首次响应从120秒优化到4秒（30倍提升）
 - **生产部署**：成功部署到云服务器并集成钉钉机器人
 
+**特别说明**：
+- 🔧 **整个过程均由 Harmes 操作完成**
+- 📄 **文档及整体思路由关彧提供**
+- 🤖 **Harmes 负责具体实现和部署**
+
 ### 🎯 核心能力展示
 - ✅ **完整RAG系统搭建**：从环境配置到代码实现
 - ✅ **性能优化能力**：解决实际工程瓶颈（120秒→4秒）
@@ -233,7 +238,7 @@ docker compose up -d
 4. [平台对比](chapters/04-platform-comparison.md) — 多平台实验总结
 5. [VLLM探索](chapters/05-vllm-and-cloud.md) — 本地模型部署尝试
 6. [最终调优](chapters/06-final-tuning.md) — RAG本质思考
-7. **[性能优化](chapters/07-performance-optimization.md)** ⭐ — 从120秒到4秒
+7. **[性能优化](chapters/07-performance-optimization.md)** ⭐ — 从120秒到4秒（**特别标注**：本部分由 Harmes 搭建的 LangChain RAG 系统实现，整个过程均由 Harmes 操作完成）
 8. [钉钉部署](chapters/08-dingtalk-deployment.md) — 生产环境集成
 9. [模型切换](chapters/09-model-switching.md) — GLM-4-9B实战
 10. [第三次搭建](chapters/10-langchain-third-attempt.md) — LangChain重写
@@ -246,6 +251,25 @@ docker compose up -d
 - **嵌入模型**：BGE-M3中英文通用，bge-large-zh中文优化
 - **检索策略**：多路检索 > 单路检索，Reranker效果显著
 - **数据处理**：编码转换很重要，分块策略影响效果
+
+### 🤖 技术实现分工
+
+**特别说明**：本项目的技术实现和文档工作分工如下
+
+- **Harmes（技术实现）**：
+  - 搭建 LangChain RAG 系统
+  - 完成性能优化（120秒→4秒）
+  - 部署到云服务器
+  - 集成钉钉机器人
+  - 整个操作过程均由 Harmes 完成
+
+- **关彧（文档与思路）**：
+  - 提供整体项目思路
+  - 编写项目文档
+  - 整理学习记录
+  - 制作作品集
+
+**特别标注**：性能优化与部署实战部分由 **Harmes 搭建的 LangChain RAG 系统** 实现，整个过程均由 Harmes 操作完成。
 
 ---
 
@@ -284,4 +308,3 @@ docker compose up -d
 *最后更新：2026年5月21日*
 *学习时长：2个月*
 *项目状态：基础版本已完成，持续优化中*
-```
